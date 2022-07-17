@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(19, 19, 18);
+}
+
+header,
+footer{
+    
+    padding: 15px;
+    font-weight: 900;
+    color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: darkgreen;
+    
+   
+}
+
+header{
+    top: 0;
+    }
+
+footer{
+    bottom: 0;
+}
+
+
+div[class^='box']{
+    width: 1800px;
+    height: 250px;
+    /* display: inline-block; "sirve para alinear las cajas de forma horizontal" */
+    display: block;
+    border: 4px solid rgb(3, 2, 2);/* solid, hiddden, double son para dar estilo al borde de la caja */
+    padding: 25px;
+    color: rgb(10, 10, 10);
+    text-align: center;
+}
+
+.box-1:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    height: 500px;
+
+    
+}
+
+.box-2:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.box-3:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.box-1{
+    margin: 20px;
+    background-color: orange;
+    text-align: center;
+    border-radius: 5%;
+    justify-content: right;
+    
+}
+
+.box-2{
+    margin: 20px;
+    background-color: orange;
+    border-radius: 5%;
+
+}
+.box-3{
+    margin: 20px;
+    background-color: orange;
+    border-radius: 5%;
+}
+
+.box-4{
+    margin: 20px;
+    background-color: goldenrod;
+    border-radius: 5%;
+}
+
+.container{
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+
+}
+h1{
+    display: inline-block;
+}
+
+h2,
+p{
+    padding: 0 25px;
+}
+

@@ -1,0 +1,23 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.padre{
+
+}
+
+    .header{
+    background: #000;
+    }
+        .menu{
+            background: #2d4059;
+        }
+    .section{
+    background: #000;
+    }
+    .footer{
+    background: #000;
+    }

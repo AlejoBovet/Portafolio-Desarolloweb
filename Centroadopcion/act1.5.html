@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mensaje(){
+            var i=1;
+            while (i<=3){
+            var dato = document.getElementById("campo"+i).value;
+            alert(i);
+            i = i+i;    
+            }
+
+        //var nombre = document.getElementById("nombre").value;
+        //var Apellidos = document.getElementById("apellido").value;
+        //alert("hola" + nombre + Apellidos + "has enviado tu solicitud");
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario de adocion</h1>
+</p>
+<h3>Reserva</h3>
+<p>
+</label for="nombre">nombre</label>
+<input type="text" name="nombre" id="campo1" />
+<br>
+</label for="Apellidos">Apellidos</label>
+<input type="text" name="Apellidos" id="campo2"/>
+<br>
+<input type="radio" id="Rut" value=R name="Identificacion">
+<label for="Rut">Rut</label>
+<input type="radio" id="Pasaporte" value=P name="Identificacion">
+<label for="Pasaporte">Pasaporte</label>
+<br>
+edad
+<input type="text" id="edad" name="edad">
+<br>    
+</label for="Identificacion">N.identificacion</label>
+<input type="identificador" name="Identificacion"/>
+</p>
+<p>
+<input type="submit" value="Enviar" id="Reserva" name="enviar" onclick="mensaje();">
+<input type="reset" value="Restaurar">
+
+</p>
+
+</body>
+</html>
