@@ -1,23 +1,139 @@
 *{
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+a{
+    text-decoration: none;
 }
 
 
 .padre{
+    display: flex;
+    flex-flow: column nowrap;
 
 }
 
     .header{
-    background: #000;
+        background: url(../Imagenes/Img1.JPG);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
     }
         .menu{
-            background: #2d4059;
+            background: rgba(0,0 ,0, .1);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255, 255, .5);
         }
+            .logo{
+                
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color: #fff;
+                    font-size: 30px;
+                }
+                .logo a:hover{
+                    color: #343434;
+                }
+            .nav{
+                
+                flex: 5 1 auto;
+            }
+             .nav a{
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px ;
+                letter-spacing: 2px;
+             }
+              .nav a:hover{
+                color: #343434;
+              }
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+            }
+                .social a{
+                    font-size: 18px;
+                    color: #fff;
+                    padding: 0;
+                }
+                .social a:hover{
+                    color: #343434;
+                }
+        .texto-principal{
+            background: #f07b3f;
+        }    
+            h1{
+                background: #ffd460;
+            }
     .section{
     background: #000;
+    display: flex;
     }
+        .articulos{
+            background: #4e4e6a;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #1f6cb0;
+                flex: 1 1 40%;
+            }
+            .navegacion{
+                background: #70a3c4;
+                flex: 1 1 100%;
+            }
+        .aside{
+            background: #f73f52;
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background: #ffea85;
+            }
+
     .footer{
     background: #000;
+    display: flex;
+    justify-content: center;
     }
+        .pie{
+            background: #e6af2e;
+            width: 300px;
+        }
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    .article{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
