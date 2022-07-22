@@ -52,7 +52,7 @@ a{
                 flex: 5 1 auto;
             }
              .nav a{
-                color: #fff;
+                color: rgb(0, 0, 0);
                 font-size: 11px;
                 text-transform: uppercase;
                 padding: 0 10px ;
@@ -182,6 +182,26 @@ a{
             text-transform: uppercase;
             padding: 0 10px;
             letter-spacing: 2px;
+        }
+
+        .submenu {
+            position: relative;
+        }
+
+        .submenu #carrito{
+            display: none;
+        }
+        .submenu:hover #carrito{
+            display: block;
+            position: absolute;
+            right:0;
+        
+            top:100%;
+            z-index: 1;
+            background-color: white;
+            padding: 20px;
+            min-height: 400px;
+            min-width: 300px;
         }
 
 @media all and (max-width: 808px){

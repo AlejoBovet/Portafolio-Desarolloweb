@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,7 +21,32 @@
                     <a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="off">Inicio</span></a>
                     <a href="#"><i class="fa fa-university" aria-hidden="true"></i><span class="off">nosotros</span></a>
                     <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="off">contacto</span></a>
-                    <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i><span class="off">carrito</span></a>
+                    <!-- <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i><span class="off">carrito</span></a> -->
+                    
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                                <img src="Imagenes/cart.png" id="img-carrito">
+                                <div id="carrito">
+                                        
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+    
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="social">
                     <div><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
@@ -35,35 +61,50 @@
             <div class="articulos">
                 <article class="article">
                     <!-- <img src="Imagenes/manta.png" alt=""> -->
-                    <img src="Imagenes/manta2.jpg" alt="">
-                    <h3>Manta</h3>
-                    <h2>genero</h2>
-                    <p>bjfd.wekfbnjerbfuihriehg.hugrs.legurhesrghuse.hgkjnv</p>
-                    <a href="#">leer mas..</a>
+                    <div class="card">
+                        <img src="Imagenes/manta.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Manta rojo-azul</h4>
+                            <p>Hilo de calidad media</p>
+                            <p class="precio">$25000 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>  <span class="u-pull-right ">$15000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="card">
+                        <img src="Imagenes/manta.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
+                            <p>Juan Pedro</p>
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div>
                 </article>
                 <article class="article">
                     <!-- <img src="Imagenes/manta.png" alt=""> -->
-                    <img src="Imagenes/manta2.jpg" alt="">
-                    <h3>Manta</h3>
-                    <h2>genero</h2>
-                    <p>bjfd.wekfbnjerbfuihriehg.hugrs.legurhesrghuse.hgkjnv</p>
-                    <a href="#">leer mas..</a>
+                    <div class="card">
+                        <img src="Imagenes/manta.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
+                            <p>Juan Pedro</p>
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div>
                 </article>
                 <article class="article">
                     <!-- <img src="Imagenes/manta.png" alt=""> -->
-                    <img src="Imagenes/manta2.jpg" alt="">
-                    <h3>Manta</h3>
-                    <h2>genero</h2>
-                    <p>bjfd.wekfbnjerbfuihriehg.hugrs.legurhesrghuse.hgkjnv</p>
-                    <a href="#">leer mas..</a>
-                </article>
-                <article class="article">
-                    <!-- <img src="Imagenes/manta.png" alt=""> -->
-                    <img src="Imagenes/manta2.jpg" alt="">
-                    <h3>Manta</h3>
-                    <h2>genero</h2>
-                    <p>bjfd.wekfbnjerbfuihriehg.hugrs.legurhesrghuse.hgkjnv</p>
-                    <a href="#">leer mas..</a>
+                    <div class="card">
+                        <img src="Imagenes/manta.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
+                            <p>Juan Pedro</p>
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div>
                 </article>
                 <nav class="navegacion">
                     <a href="#">inicio</a>
