@@ -204,6 +204,17 @@ a{
             min-width: 300px;
         }
 
+        .borrar-curso {
+            background-color: red;
+            border-radius: 50%;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        
+
 @media all and (max-width: 808px){
     .section{
         flex-direction: column;
