@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +10,14 @@
 <body>
     <header>
     <center><h1>Bovet Trasportes</h1></center>
-    <!-- <div id="saludo"></div>
-    <button onclick="saludar()">Saludar</button>
-    <script src="codigoshome.js"></script> -->
-    
     </header>
 
     <div class="container">
         <div class="box-1" style="height: 500px;">
             <h1>Mudanza Internacional</h1>
-            <p>Nuestra empresa cumple con los estandares viales de casi toda la region de nuestra parte del continente
-                ademas contamos con personal experto y calificado para que sus pertenencias pasen sin ningun problemas
-                por las aduanas correspondiente de cualquier pais. 
-                Dentro del servicio tambien se incluye la documentacion de sus pertenencias y seguro contra robos y/o perdida
+            <p>mudansas al exterior por todo el continente
             </p>
-            <img src="camionInt.jpg" alt="cInt" width="500px">
+            <img src="img/camiones.jpg" alt="cInt" width="">
         </div>
         
         <div class="box-2">
@@ -44,13 +38,49 @@
         
         <div class="box-4" style="color: black;">
         <h1>Mision y Vision</h1>
-        
         </div>
-    </div> 
+        <div class="box-5">
+            <h1>Contacto</h1>
+        <form id="enviar-mail" class="formulario">
+            <div class="mb-10">
+                <label for="email">De:</label>
+                <input class="boxemail"  id="email" type="email">
+            </div>
+            <div class="mb-10">
+                <label for="asunto">Asunto</label>
+                <input class="boxemail"  id="asunto" type="text">
+            </div>
+            <div class="mb-10"> 
+                <label for="mensaje">Mensaje</label>
+                <textarea class="boxemail" id="mensaje"></textarea>
+            </div>
 
-    <footer>
-        <h1>contacto</h1>
-    </footer>
+            <div  id="spinner">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+            
+            <div class="flex justify-between">
+                    <button 
+                        id="enviar" class="w-full bg-blue-600 px-2 py-5 text-white items-center cursor-not-allowed opacity-50 mr-5 uppercase font-bold items-center flex justify-center" 
+                        type="submit" 
+                    >Enviar
+                        
+                    </button>
+
+                    <button id="resetBtn" type="submit"> Resetear Form </button>
+            </div>
+        </form> 
+    </div>
+
+    </div> 
+    <script src="app.js"></script>
 
     
 </body>
