@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador multiple campos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+
+    <h1>Buscador de magas</h1>
+
+<div class="contenedor">  
+
+    <form id="buscador">
+        <div >
+            <div >
+                <label for="Demografia">Marca</label>
+                <select  id="demografia">
+                    <option value="">Seleccione</option>
+                    <option value="shonen">shonen</option>
+                    <option value="seinen">seinen</option>
+                    <option value="romcom">romcom</option>
+                    <option value="slicelife">slicelife</option>
+                    </select>
+            </div>
+            <div >
+                <label for="year">Año</label>
+                <select  id="year">
+                    <option value="">Seleccione</option>
+                </select>
+            </div>
+            <div >
+                <label for="minimo">tomos</label>
+                <select  id="minimo">
+                        <option value="">Seleccione</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        <option value="60">60</option>
+                        <option value="70">70</option>
+                        <option value="80">80</option>
+                </select>
+            </div>
+            <div >
+                <label for="maximo">tomo maximo</label>
+                <select id="maximo">
+                        <option value="">Seleccione</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="40">40</option>
+                        <option value="60">60</option>
+                        <option value="80">80</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                </select>
+            </div>
+           
+        </div>
+    </form>
+    <h1>Resultados</h1>
+    <div id="resultado"></div>
+</div>
+    
+</body>
+<script src="db_buscador.js"></script>
+</html>
