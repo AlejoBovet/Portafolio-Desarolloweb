@@ -2,7 +2,7 @@ const Mangas = [
     {
         titulo: 'BNHA',
         tomos: 36,
-        año: 2012,
+        year: 2012,
         demografia: 'shonen',
         autor: 'horikoshi'
     },
@@ -10,7 +10,7 @@ const Mangas = [
     {
         titulo: 'naruto',
         tomos: 136,
-        año: 1998,
+        year: 1998,
         demografia: 'seinen',
         autor: 'kishi'
     },
@@ -18,7 +18,7 @@ const Mangas = [
     {
         titulo: 'BC',
         tomos: 30,
-        año: 2013,
+        year: 2013,
         demografia: 'spokon',
         autor: 'yuki'
     },
@@ -26,7 +26,7 @@ const Mangas = [
     {
         titulo: 'Dragon ball',
         tomos: 58,
-        año: 1985,
+        year: 1985,
         demografia: 'shonen',
         autor: 'akir'
     },
@@ -34,7 +34,7 @@ const Mangas = [
     {
         titulo: 'slam dun',
         tomos: 25,
-        año: 1992,
+        year: 1992,
         demografia: 'spokon',
         autor: 'takehiko'
     },
@@ -42,7 +42,7 @@ const Mangas = [
     {
         titulo: 'two piece',
         tomos: 200,
-        año: 2000,
+        year: 2000,
         demografia: 'shonen',
         autor: 'oba'
     },
@@ -50,7 +50,7 @@ const Mangas = [
     {
         titulo: 'hxh',
         tomos: 38,
-        año: 1997,
+        year: 1997,
         demografia: 'shonen',
         autor: 'togash'
     },
@@ -58,7 +58,7 @@ const Mangas = [
     {
         titulo: 'one kick',
         tomos: 22,
-        año: 2010,
+        year: 2010,
         demografia: 'seinen',
         autor: 'two'
     },
@@ -66,7 +66,7 @@ const Mangas = [
     {
         titulo: 'bleak',
         tomos: 57,
-        año: 2002,
+        year: 2002,
         demografia: 'romcom',
         autor: 'tito'
     },
@@ -74,7 +74,7 @@ const Mangas = [
     {
         titulo: 'demons sla',
         tomos: 37,
-        año: 2014,
+        year: 2014,
         demografia: 'slicelife',
         autor: 'goutuke'
     },
