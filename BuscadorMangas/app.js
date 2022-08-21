@@ -1,71 +1,68 @@
-const marca = document.querySelector('#demografia');
+//Variables 
+const demografia = document.querySelector('#demografia');
 const year = document.querySelector('#year');
 const minimo = document.querySelector('#minimo');
 const maximo = document.querySelector('#maximo');
 
-
 const resultado = document.querySelector('#resultado');
-
 
 const max= new Date().getFullYear();
 const min=max-10;
 
-//Generar un objeto con la busqueda
-const datoBusqueda = {
+//generar un objeto en la busqueda
+const datosBusqueda = {
     demografia:'',
     year:'',
     minimo:'',
     maximo:'',
-   
+
 }
 
 //eventos 
 document.addEventListener('DOMContentLoaded', () => {
-    mostrarAutos(mangas);
+    mostrarMangas(Mangas);
 
-    // llena las opciones de años
     llenarSelect()
+
 })
 
 demografia.addEventListener('change',e =>{
-    datoBusqueda.marca=e.target.value;  
-
-    filtrarmangas();
+    datosBusqueda.demografia = e.target.value;
+   
+    filtrarMangas();
 })
-year.addEventListener('change',e =>{
-    datoBusqueda.year=e.target.value;  
-    filtrarmangas();
+
+ year.addEventListener('change',e =>{
+    datosBusqueda.year=e.target.value;
+    filtrarMangas();
 })
-minimo.addEventListener('change', e =>{
-    datoBusqueda.minimo = e.target.value;
-    filtrarmangas();
+
+minimo.addEventListener('change',e =>{
+    datosBusqueda.minimo=e.target.value;
+    filtrarMangas();
 })
-maximo.addEventListener('change', e =>{
-    datoBusqueda.maximo = e.target.value;
-    filtrarmangas();
-}
 
+maximo.addEventListener('change',e =>{
+    datosBusqueda.maximo=e.target.value;
+    filtrarMangas();
+    console.log(datosBusqueda);
+}) 
 
-
-//Funciones 
-function mostrarmangas(manga){
+//funciones
+function mostrarMangas(Mangas){
 
     limpiarHTML();//elimina html previo
 
-    autos.forEach(manga => {
-        const {titulo, demografia, year, tomos, autor} = manga;
-        const autoHTML = document.createElement('p');
+    Mangas.forEach(mangas => {
+        const {titulo, demografia, year, tomos, autor}= mangas;
+        const MangasHTML = document.createElement('p');
 
-        autoHTML.textContent =`
-        ${titulo} - ${demografia}  -${year} -${tomos}  - ${autor} 
-        
+        MangasHTML.textContent=`
+        ${titulo} - ${demografia} - ${year} - Tomos: ${tomos} - Autor: ${autor} 
         `;
-    
-        //insertar en el html
-        resultado.appendChild(autoHTML)
 
-    });
-
+        resultado.appendChild(MangasHTML)
+    })
 }
 
 //limpiat html
@@ -86,17 +83,22 @@ function llenarSelect(){
 }
 
 //funcion que filtra en base a la busqueda
-function filtrarmangas(){
-    const resultado = Mangas.filter(filtrarmangas).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMax)
-    //console.log(resultado);
-    mostrarAutos(resultado);
+
+function filtrarMangas(){
+    const resultado = Mangas.filter(filtrarDemografia).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMax)
+   
+     
+    console.log(resultado);
+    mostrarMangas(resultado);
 
     if(resultado.length){
-        mostrarmangas(resultado);
+        mostrarMangas(resultado);
     } else {
         noResultado();
-    }
+    } 
 }
+
+
 
 function noResultado(){
 
@@ -106,16 +108,16 @@ function noResultado(){
     resultado.appendChild(noResultado);
 }
 
-function filtrarmangas(mangas){
-    const{demografia} = datoBusqueda;
-    if(datoBusqueda.demografia){
-        return mangas.demografia === demografia;
+function filtrarDemografia(mangas){
+    if(datosBusqueda.demografia){
+        return mangas.demografia === datosBusqueda.demografia;
     }
-    return mangas;
+    return mangas
+
 }
 
-function filtrarYear(mangas){
-    const{year} = datoBusqueda;
+ function filtrarYear(mangas){
+    const{year} = datosBusqueda;
     if(year){
         return mangas.year === parseInt(year);
     }
@@ -123,7 +125,7 @@ function filtrarYear(mangas){
 }
 
 function filtrarMinimo(mangas){
-    const{minimo} = datoBusqueda;
+    const{minimo} = datosBusqueda;
     if(minimo){
         return mangas.tomos >= minimo;
     }
@@ -131,9 +133,9 @@ function filtrarMinimo(mangas){
 }
 
 function filtrarMax(mangas){
-    const{maximo} = datoBusqueda;
+    const{maximo} = datosBusqueda;
     if(maximo){
         return mangas.tomos <= maximo;
     }
     return mangas;
-}
+} 
